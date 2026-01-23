@@ -55,34 +55,41 @@
         }
 
         .menu-content {
-            padding: 20px 15px;
+            padding: 15px 10px;
+        }
+
+        .sections-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
         }
 
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .section-title {
-            font-size: 1.3em;
+            font-size: 1.1em;
             color: #8B4513;
-            border-bottom: 3px solid #D2691E;
-            padding-bottom: 6px;
-            margin-bottom: 12px;
+            border-bottom: 2px solid #D2691E;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
             font-weight: bold;
         }
 
         .menu-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 6px;
+            grid-template-columns: 1fr;
+            gap: 5px;
         }
 
         .menu-item {
             background: linear-gradient(135deg, #FFF8F0 0%, #FAEBD7 100%);
-            padding: 8px;
-            border-radius: 8px;
+            padding: 6px 8px;
+            border-radius: 6px;
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             border: 2px solid transparent;
             transition: all 0.3s ease;
         }
@@ -93,17 +100,19 @@
         }
 
         .item-name {
-            font-size: 0.85em;
+            font-size: 0.8em;
             font-weight: bold;
             color: #5d3a1a;
-            margin-bottom: 4px;
             line-height: 1.2;
+            flex: 1;
         }
 
         .item-price {
-            font-size: 1em;
+            font-size: 0.9em;
             color: #8B4513;
             font-weight: bold;
+            white-space: nowrap;
+            margin-right: 5px;
         }
 
         .price-currency {
@@ -143,8 +152,11 @@
         </div>
 
         <div class="menu-content">
-            <!-- القهوة التركية والعربية -->
-            <div class="section">
+            <div class="sections-container">
+                <!-- العمود الأول -->
+                <div>
+                    <!-- القهوة التركية والعربية -->
+                    <div class="section">
                 <h2 class="section-title">☕ القهوة التركية والعربية</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -180,10 +192,10 @@
                         <div class="item-price">25 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- المشروبات الساخنة الخاصة -->
-            <div class="section">
+                    <!-- الشاي المصري -->
+                    <div class="section">
                 <h2 class="section-title">🔥 المشروبات الساخنة الخاصة</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -235,10 +247,10 @@
                         <div class="item-price">25 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- الشاي المصري -->
-            <div class="section">
+                    <!-- العصائر المصرية الطبيعية -->
+                    <div class="section">
                 <h2 class="section-title">🍵 الشاي المصري الأصيل</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -282,10 +294,10 @@
                         <div class="item-price">18 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- المشروبات الباردة -->
-            <div class="section">
+                    <!-- الميلك شيك -->
+                    <div class="section">
                 <h2 class="section-title">🧊 المشروبات الباردة المنعشة</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -325,10 +337,13 @@
                         <div class="item-price">30 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
+                </div>
 
-            <!-- العصائر المصرية الطبيعية -->
-            <div class="section">
+                <!-- العمود الثاني -->
+                <div>
+                    <!-- المشروبات الساخنة الخاصة -->
+                    <div class="section">
                 <h2 class="section-title">🍹 العصائر المصرية الطبيعية</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -396,10 +411,10 @@
                         <div class="item-price">22 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- المشروبات المصرية التقليدية -->
-            <div class="section">
+                    <!-- المشروبات الباردة -->
+                    <div class="section">
                 <h2 class="section-title">🌺 المشروبات المصرية التقليدية</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -455,10 +470,10 @@
                         <div class="item-price">20 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- الميلك شيك -->
-            <div class="section">
+                    <!-- المشروبات المصرية التقليدية -->
+                    <div class="section">
                 <h2 class="section-title">🥤 الميلك شيك</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -486,10 +501,10 @@
                         <div class="item-price">40 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- سناكس خفيفة -->
-            <div class="section">
+                    <!-- سناكس خفيفة -->
+                    <div class="section">
                 <h2 class="section-title">🍟 سناكس خفيفة</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -509,10 +524,10 @@
                         <div class="item-price">20 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
-            </div>
+                    </div>
 
-            <!-- الحلويات -->
-            <div class="section">
+                    <!-- الحلويات -->
+                    <div class="section">
                 <h2 class="section-title">🍰 الحلويات</h2>
                 <div class="menu-grid">
                     <div class="menu-item">
@@ -540,8 +555,9 @@
                         <div class="item-price">35 <span class="price-currency">ج</span></div>
                     </div>
                 </div>
+                    </div>
+                </div>
             </div>
-
         </div>
 
         <div class="footer">
